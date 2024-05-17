@@ -1,12 +1,132 @@
 <!-- DOCTYPE는 웹브라우저에게 해당 html이 html5형식으로 작성되어 있음을 알려줌 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <!-- 헤드 부분은 웹페이지에서 안보이는 부분 -->
   <head>
+    <meta charset="UTF-8" />
     <title>The Basic Language of web: HTML</title>
   </head>
   <!-- 바디 부분은 웹페이지에서 보이는 부분 -->
   <body>
-    <h1>The Basic Language of web: HTML</h1>
+    <!-- 헤더는 웹페이지의 상단 부분을 의미함 -->
+    <header>
+      <h1>📘 The Code Magazine</h1>
+
+      <nav>
+        <a href="blog.html" target="_blank">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">Css Grid</a>
+      </nav>
+    </header>
+
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+        <!-- b태그와 strong태그의 차이는 둘다 태그 안에 텍스트를 굵게 표시해준다.
+        하지만 b태그는 강조의 의미가 없고 strong은 태그 자체에 강조의 의미가 있다.
+        그래서 b태그를 쓰기 보다는 의미가 있는 strong태그를 쓰는게 좋다.
+       -->
+        <img src="img/laura-jones.jpg" alt="author" width="50" height="50" />
+        <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p>
+        <img
+          src="img/post-img.jpg"
+          alt="HTML code on a screen"
+          width="500"
+          height="200"
+        />
+      </header>
+
+      <p>
+        All modern websites and web applications are built using three
+        <!-- i와 em태그 또한 마찬가지 둘다 텍스트를 기울어서 표시 해준다.
+        i태그는 의미가 없지만 em태그는 강조의 의미를 가진다. -->
+        <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript.
+      </p>
+
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <h3>What is HTML?</h3>
+
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <!-- ol태그는 순서가 있는 리스트를 나타낼 떄 사용한다.-->
+      <ol>
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+      <p>
+        You can learn more at the
+        <a href="https://developer.mozilla.org/ko/docs/Web/HTML" target="_blank"
+          >MDN Web Docs.</a
+        >
+      </p>
+
+      <h3>Why should you learn HTML?</h3>
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+
+      <!-- ul은 순서가 없는 리스트를 나타낼 떄 사용하고 -->
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+    </article>
+
+    <!-- aside태그는 웹페이지의 주요 파트에 있는 정보를 보완하는 역할을 하는 태그-->
+    <aside>
+      <h4>Related posts</h4>
+      <ul>
+        <li>
+          <img src="img/related-1.jpg" alt="Person programming" / width="75"
+          height="75">
+          <a href="#">How to learning Web Developer</a>
+          <p>By Jonas Scheditmann</p>
+        </li>
+        <li>
+          <img src="img/related-2.jpg" alt="lighting" / width="75" height="75">
+          <a href="#">The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
+        </li>
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="javascript code"
+            width="75"
+            height="75"
+          />
+          <a href="#">Why JavaScript is Awesome</a>
+          <p>By Matilda</p>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- footer는 웹페이지의 하단 부분을 나타냄 -->
+    <footer>Copyright &copy; 2027by The Code Magazine</footer>
   </body>
 </html>
