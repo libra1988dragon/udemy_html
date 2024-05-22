@@ -10,7 +10,7 @@
   <!-- 바디 부분은 웹페이지에서 보이는 부분 -->
   <body>
     <!-- 헤더는 웹페이지의 상단 부분을 의미함 -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -29,7 +29,9 @@
         그래서 b태그를 쓰기 보다는 의미가 있는 strong태그를 쓰는게 좋다.
        -->
         <img src="img/laura-jones.jpg" alt="author" width="50" height="50" />
-        <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <b>Laura Jones</b> on Monday, June 21st 2027
+        </p>
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
@@ -69,7 +71,7 @@
       <p>In HTML, each element is made up of 3 parts:</p>
       <!-- ol태그는 순서가 있는 리스트를 나타낼 떄 사용한다.-->
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -88,7 +90,9 @@
 
       <!-- ul은 순서가 없는 리스트를 나타낼 떄 사용하고 -->
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -97,22 +101,24 @@
         <li>To impress friends</li>
         <li>To have fun 😃</li>
       </ul>
+      <p>Hopefully you learned something new here. See you next time!</p>
     </article>
 
     <!-- aside태그는 웹페이지의 주요 파트에 있는 정보를 보완하는 역할을 하는 태그-->
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="img/related-1.jpg" alt="Person programming" / width="75"
           height="75">
           <a href="#">How to learning Web Developer</a>
-          <p>By Jonas Scheditmann</p>
+          <!-- class의 경우 두 단어 사이에 - 넣어 표현하는걸 권고 -->
+          <p class="related-author">By Jonas Scheditmann</p>
         </li>
         <li>
           <img src="img/related-2.jpg" alt="lighting" / width="75" height="75">
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -122,12 +128,14 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
     <!-- footer는 웹페이지의 하단 부분을 나타냄 -->
-    <footer>Copyright &copy; 2027by The Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027by The Code Magazine</p>
+    </footer>
   </body>
 </html>
